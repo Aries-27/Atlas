@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+/*const mongoose = require("mongoose");
 require("../../config.js");
 require("../../Core.js");
 const { mk,mku, mkchar } = require("../../Database/dataschema.js");
@@ -131,4 +131,4 @@ module.exports = {
         await Miku.sendMessage(m.from, bmffg, { quoted: m });
     }
   },
-};
+};*/
