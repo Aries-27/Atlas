@@ -11,7 +11,7 @@ module.exports = {
         let picURL = fs.readFileSync('./Page/BG.jpg')
         let repoInfo = await axios.get('https://api.github.com/repos/FantoX001/Atlas-MD')
         let repo = repoInfo.data
-        let txt = `      🧣 *${botName}
+        let txt = `      🧣 *${botName}*
         
         Hii! I'm Elaina a whatsapp bot, Developed by Atlas and Reverse engineered by Ronen to make your whatsapp more enjoyable and to do everything possible on whatsapp.
 
