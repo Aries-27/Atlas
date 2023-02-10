@@ -5,14 +5,16 @@ module.exports = {
   react: "✨",
   category: "Core",
   start: async (Miku, m, {prefix,pushName,NSFWstatus}) => {
-   let textHelpMenu = `Konichiwa *${pushName}* Senpai,
+   let textHelpMenu = `
+  ╭─「(💙^💙」
+│⋊ 𝕌𝕤𝕖𝕣: *${pushName}*
+│⋊ ℕ𝕒𝕞𝕖: *${botName}*
+│⋊ ℙ𝕣𝕖𝕗𝕚𝕩: *${prefix}*
+│⋊ 𝕆𝕨𝕟𝕖𝕣: Ronen
+│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://9qr.de/XD2HrB
+╰────────────┈エリーナ  
 
-I am *${botName}*, a bot developed by *Team Atlas* and remodified by Ronen.
-
-My prefix is: *${prefix}*
-
-Here's the list of my Commands.\n
-   
+Here's the list of my Commands.
 
 ╭────ꕥ Core ꕥ────╮
 ├
@@ -235,20 +237,20 @@ if (NSFWstatus == "true"){
 ╰──────────────────╯\n\n`
 }
 
-textHelpMenu +=`*🔰  ${botName}  🔰*
-_Powered By:_ *Team Ronen-Bots* 
+textHelpMenu +=`*🎑  ${botName}  🎑*
+_Powered By:_ *Ronen-Bots* 
 
 🎀 To use any of these commands type 
 " *${prefix}Command name* ".
 
-🏮 To get Support Group link type " *${prefix}support* ".
+🎭 To get Support Group link type " *${prefix}support* ".
 
-🧩 To report any issues to Developer type " *${prefix}report <describe issue>* ".\n`
+⚠️ To report any issues to Developer type " *${prefix}report <describe issue>* ".\n`
 
 let buttons = [
     {
       buttonId: `${prefix}repo`,
-      buttonText: { displayText: "*ELAINA*" },
+      buttonText: { displayText: "ELAINA" },
       type: 1,
     },
   ];
