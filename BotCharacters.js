@@ -27,7 +27,7 @@ global.charID0 = {
     botImage2 : "https://images7.alphacoders.com/111/1114169.jpg",
     botImage3 : "https://wallpapercave.com/cdn-cgi/mirage/81a9d5999dd8e4b0b51aba18cd38e7b331108578bab0db958f2e31b81956de3c/1280/https://wallpapercave.com/wp/wp8027442.jpg",
     botImage4 : "https://wallpapercave.com/cdn-cgi/mirage/81a9d5999dd8e4b0b51aba18cd38e7b331108578bab0db958f2e31b81956de3c/1280/https://wallpapercave.com/wp/wp7724745.jpg",
-    botImage5 : "https://wallpapercave.com/cdn-cgi/mirage/81a9d5999dd8e4b0b51aba18cd38e7b331108578bab0db958f2e31b81956de3c/1280/https://wallpapercave.com/wp/wp7724745.jpg",
+    botImage5 : "https://images6.alphacoders.com/118/1189715.jpg",
     botImage6 : "https://wallpapercave.com/cdn-cgi/mirage/81a9d5999dd8e4b0b51aba18cd38e7b331108578bab0db958f2e31b81956de3c/1280/https://wallpapercave.com/wp/wp7724745.jpg",
 }
 
