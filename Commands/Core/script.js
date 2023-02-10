@@ -2,8 +2,8 @@ const axios = require('axios')
 const fs = require('fs')
 
 module.exports = {
-    name: "script",
-    alias: ["repo","sc","sourcecode","elaina"],
+    name: "elaina",
+    alias: ["ronen","bot"],
     desc: "Say hello to bot.",
     react: "🍁",
     category: "Core",
@@ -13,7 +13,7 @@ module.exports = {
         let repo = repoInfo.data
         let txt = `      🧣 *${botName}*
         
-        Hii! I'm Elaina a whatsapp bot, Developed by Atlas and Reverse engineered by Ronen to make your whatsapp more enjoyable and to do everything possible on whatsapp.
+Hii! I'm Elaina a whatsapp bot, Developed by Atlas and Reverse engineered by Ronen to make your whatsapp more enjoyable and to do everything possible on whatsapp.
 
 💜 *Our official support group* : https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO
 🐨 *My YouTube* : https://youtube.com/c/RonenAMVs
@@ -28,9 +28,9 @@ module.exports = {
 *🎯Gender* : Male👨‍🦱
 
 *❣️Relationship status* : Single
-*🎏Hobbies* : Coding, Video Editing, Workout 💪, Love Watching Animes and Kdramas
+*🎏Hobbies* : Coding, Video Editing, Workout 💪, Love Watching Animes and Kdramas`
 
-*Script* 🧣\n\n*🎀 Total Forks:* ${repo.forks_count}\n*⭐ Total Stars:* ${repo.stargazers_count}\n*📜 License:* ${repo.license.name}\n*📁 Repo Size:* ${(repo.size/1024).toFixed(2)} MB\n*📅 Last Updated:* ${repo.updated_at}\n\n*🔗 Repo Link:* ${repo.html_url}\n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with restless harkwork by *Team ATLAS*. ❞\n\n*©️ Team ATLAS- 2023*`
+
         await Miku.sendMessage(m.from,{image:picURL, caption:txt},{quoted:m});
     }
 }
