@@ -7,7 +7,7 @@ module.exports = {
   start: async (Miku, m, {prefix,pushName,NSFWstatus}) => {
    let textHelpMenu = `Konichiwa *${pushName}* Senpai,
 
-I am *${botName}*, a bot developed by *Team Atlas*.
+I am *${botName}*, a bot developed by *Team Atlas* and remodified by Ronen.
 
 My prefix is: *${prefix}*
 
@@ -236,7 +236,7 @@ if (NSFWstatus == "true"){
 }
 
 textHelpMenu +=`*🔰  ${botName}  🔰*
-_Powered By:_ *Team ATLAS*
+_Powered By:_ *Team Ronen-Bots* 
 
 🎀 To use any of these commands type 
 " *${prefix}Command name* ".
@@ -248,7 +248,7 @@ _Powered By:_ *Team ATLAS*
 let buttons = [
     {
       buttonId: `${prefix}repo`,
-      buttonText: { displayText: "Source Code" },
+      buttonText: { displayText: "*ELAINA*" },
       type: 1,
     },
   ];
