@@ -337,7 +337,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
             if (m.isGroup && csts == "true" && !icmd && !isCmd) {
                 if (m.quoted) {
                     if (m.quoted.sender == botNumber) {
-                        const botreply = await axios.get(`http://api.brainshop.ai/get?bid=172352&key=vTmMboAxoXfsKEQQ&uid=[uid]&msg=[${budy}]`)
+                        const botreply = await axios.get(`http://api.brainshop.ai/get?bid=172563&key=NIjX07K5vYiKrWLN&uid=[uid]&msg=[${budy}]`)
                         txt = `${botreply.data.cnt}`
                         setTimeout(function() {
                             m.reply(txt)
@@ -356,7 +356,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
 
             if (!m.isGroup && PMcsts == "true" && !icmd && !isCmd) {
 
-                const botreply = await axios.get(`http://api.brainshop.ai/get?bid=172352&key=vTmMboAxoXfsKEQQ&uid=[uid]&msg=[${budy}]`)
+                const botreply = await axios.get(`http://api.brainshop.ai/get?bid=172563&key=NIjX07K5vYiKrWLN&uid=[uid]&msg=[${budy}]`)
                 txt = `${botreply.data.cnt}`
                 setTimeout(function() {
                     m.reply(txt)
