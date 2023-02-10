@@ -26,7 +26,7 @@ module.exports = {
     m.reply(`*Broadcasting message to ${anu.length} groups...*`)
 
     for (let i of anu) {
-        let txt = `*「  🧣 ${botName} Broadcast 🧣  」*\n\n*🧩 Message:* ${broadcastText}\n\n\n*🔰 Regards ~ ${pushName}*`
+        let txt = `*「  ⚠️ ${botName} Broadcast ⚠️  」*\n\n*🎭 Message:* ${broadcastText}\n\n\n*🔰 Regards ~ ${pushName}*`
         setTimeout(function(){
             Miku.sendMessage(i, {video:botVideo, caption: txt, mentions:participants.map(a => a.id)});
         }, 1500);
