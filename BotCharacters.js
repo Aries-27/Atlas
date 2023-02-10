@@ -23,7 +23,7 @@ Image Source: https://wallpapercave.com/
 global.charID0 = {
     botName : "Elaina",
     botVideo : fs.readFileSync("./Assets/atlas.mp4"),
-    botImage1 : "https://i.imgur.com/MClOeqe.jpeg",
+    botImage1 : "https://wallpapercave.com/cdn-cgi/mirage/81a9d5999dd8e4b0b51aba18cd38e7b331108578bab0db958f2e31b81956de3c/1280/https://wallpapercave.com/wp/wp7724745.jpg",
     botImage2 : "https://i.imgur.com/MClOeqe.jpeg",
     botImage3 : "https://i.imgur.com/MClOeqe.jpeg",
     botImage4 : "https://i.imgur.com/MClOeqe.jpeg",
