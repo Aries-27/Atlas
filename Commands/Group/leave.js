@@ -27,9 +27,9 @@ module.exports = {
 
       
       if (modStatus=="false"&&!isCreator && !isAdmin)  return Miku.sendMessage(m.from, { text: 'Sorry, only *GroupAdmins* and *Mods* can use this command !' }, { quoted: m });
-      let img ="https://wallpapercave.com/wp/wp9667218.png";
+      let img ="https://telegra.ph/file/a72410f9125e861b4c505.jpg";
 
-      await Miku.sendMessage(m.from, { image:{url:"https://wallpapercave.com/wp/wp9667218.png"  }, caption: `I'm Leaving this group on request... \n\nTake care everyone :)`,mentions: participants.map((a) => a.id) , quoted: m }).then(async () => {
+      await Miku.sendMessage(m.from, { image:{url:"https://telegra.ph/file/a72410f9125e861b4c505.jpg"  }, caption: `I'm Leaving this group on request... \n\nTake care everyone :)`,mentions: participants.map((a) => a.id) , quoted: m }).then(async () => {
          Miku.groupLeave(m.from).catch(e => {
           Miku.sendMessage(m.from, { text: `An error Occurd !` }, { quoted: m });
         });
