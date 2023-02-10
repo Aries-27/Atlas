@@ -26,7 +26,7 @@ module.exports = {
 
       await mkchar.create({id:'1', seletedCharacter: "0"});
 
-      let botNames = ['Atlas MD', 'Power MD', 'Makima MD', 'Denji MD', 'Zero Two', 'Chika MD' , 'Miku MD', 'Marin Kitagawa']
+      let botNames = ['Elaina', 'Power MD', 'Makima MD', 'Denji MD', 'Zero Two', 'Chika MD' , 'Miku MD', 'Marin Kitagawa']
       let botLogos =[
         'https://wallpapercave.com/wp/wp5924545.jpg',
         'https://wallpapercave.com/wp/wp11253614.jpg',
