@@ -8,7 +8,7 @@ module.exports = {
     react: "🍁",
     category: "Core",
     start: async(Miku, m,{pushName,prefix}) => {
-        let picURL = fs.readFileSync('https://images8.alphacoders.com/111/1115208.jpg')
+        let picURL = fs.readFileSync('./Page/BG.jpg')
         let repoInfo = await axios.get('https://api.github.com/repos/FantoX001/Atlas-MD')
         let repo = repoInfo.data
         let txt = `      🧣 *${botName}*
