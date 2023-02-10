@@ -3,7 +3,7 @@ const fs = require('fs')
 
 module.exports = {
     name: "script",
-    alias: ["repo","sc","sourcecode"],
+    alias: ["repo","sc","sourcecode","elaina"],
     desc: "Say hello to bot.",
     react: "🍁",
     category: "Core",
