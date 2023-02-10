@@ -22,7 +22,7 @@ module.exports = {
     let randomimage = botLogos[Math.floor(Math.random() * botLogos.length)];
    
     let sections = [] 
-    let chars = [`Atlas MD`, `Power MD`, `Makima MD`, `Denji MD`, `Zero Two`, `Chika MD`, `Miku MD`, `Marin Kitagawa`]
+    let chars = [`Elaina`, `Power MD`, `Makima MD`, `Denji MD`, `Zero Two`, `Chika MD`, `Miku MD`, `Marin Kitagawa`]
     let buttonDesc =[`Set bot character to Atlas MD`, `Set bot character to Power MD`, `Set bot character to Makima MD`, `Set bot character to Denji MD`, `Set bot character to Zero Two`, `Set bot character to Chika MD`, `Set bot character to Miku MD`, `Set bot character to Marin Kitagawa`]
     let buttonTexts = ['-setchar 0', '-setchar 1', '-setchar 2', '-setchar 3', '-setchar 4', '-setchar 5', '-setchar 6', '-setchar 7']
     
