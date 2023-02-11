@@ -47,7 +47,7 @@
     "figlet": "^1.5.2",
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
-    "forever-monitor": "^3.0.3",
+    "forever-monitor": "^1.5.2",
     "form-data": "^4.0.0",
     "fs": "^0.0.1-security",
     "g-i-s": "^2.1.6",
@@ -77,6 +77,7 @@
     "node-youtube-music": "^0.9.0",
     "os": "^0.1.2",
     "path": "^0.12.7",
+    "pino": "^8.10.0",
     "promise-mysql": "^5.2.0",
     "ptable": "^0.0.3",
     "qrcode": "^1.5.1",
@@ -94,12 +95,12 @@
     "yargs": "^17.6.2",
     "yarn": "^1.22.19",
     "youtube-yts": "^2.0.0",
-    "youtubedl-core": "^4.11.1"
+    "youtubedl-core": "^4.11.2"
   },
   "devDependencies": {
     "@hapi/boom": "^10.0.0",
     "jimp": "^0.16.2",
-    "pino": "^8.8.0",
+    "pino": "^8.10.0",
     "qrcode-terminal": "^0.12.0"
   }
 }
