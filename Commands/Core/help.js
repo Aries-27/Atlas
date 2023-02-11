@@ -249,7 +249,7 @@ _Powered By:_ *Ronen-Bots*
 
 let buttons = [
     {
-      buttonId: `${prefix}repo`,
+      buttonId: `${prefix}bot`,
       buttonText: { displayText: "ELAINA" },
       type: 1,
     },
