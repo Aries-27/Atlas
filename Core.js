@@ -17,7 +17,7 @@
 /             Meet Team ATLAS who holds all rights to this repository:              /
 /                                                                                   /
 / 1. Pratyush - https://github.com/pratyush4932                                     /
-/ 2. Ahmii - https://github.com/kirito2355                                          /               
+/ 2. Ahmii - https://github.com/Ahmii-kun                                          /               
 / 3. Kai - https://github.com/Kai0071                                               /                    
 / 4. Devime - https://github.com/Devime69                                           /
 / 5. Jay JayOps - https://github.com/jayjay-ops                                     /
@@ -235,6 +235,12 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
         let checkdata = await mk.findOne({
             id: m.from
         });
+        if(!checkdata) {
+            let newdata = new mk({
+                id: m.from,
+                antilink: "false",
+            });
+        }
         if (checkdata) {
             let mongoschema = checkdata.antilink || "false";
             if (m.isGroup && mongoschema == "true") {
@@ -243,7 +249,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
                     m.reply(
                         `\`\`\`「  Antilink System  」\`\`\`\n\nNo action will be taken because you sent this group's link.`
                     );
-                } else if (isUrl(m.text)) {
+                } else if (budy.includes(`https://chat.whatsapp`)) {
                     bvl = `\`\`\`「  Antilink System  」\`\`\`\n\nAdmin has sent a link so no issues.`;
                     if (isAdmin) return m.reply(bvl);
                     if (m.key.fromMe) return m.reply(bvl);
@@ -271,13 +277,29 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
                         from, {
                             text: `\`\`\`「  Antilink System  」\`\`\`\n\n@${
                 kice.split("@")[0]
-              } Removed for sending link in this group! Message has been deleted.`,
+              } Removed for sending WhatsApp group link in this group! Message has been deleted.`,
                             mentions: [kice],
                         }, {
                             quoted: m
                         }
                     );
-                } else {}
+                }else if(isUrl(m.text) && !icmd && !isAdmin && !isCreator) {
+                    await Miku.sendMessage(
+                        from, {
+                            delete: {
+                                remoteJid: m.from,
+                                fromMe: false,
+                                id: m.id,
+                                participant: m.sender,
+                            },
+                        }, {
+                            quoted: m
+                        }
+                    );
+                    m.reply(`Antilink is on ! To use any link related commands use my actual prefix ( ${prefix} ) ! \n\nExample : ${prefix}igdl <link>`);
+                }
+                
+                else {}
             }
         }
 
@@ -305,6 +327,14 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
             id: '1'
         });
         var workerMode = "false";
+        if (!botModeSet) {
+            await mkchar.create({
+                id: '1',
+                seletedCharacter: '0',
+                privateMode: 'false'
+            });
+            workerMode = botModeSet.privateMode || "false";
+        }
         if (botModeSet) {
             workerMode = botModeSet.privateMode || "false";
             if (workerMode == "true") {
