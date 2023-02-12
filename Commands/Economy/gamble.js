@@ -66,6 +66,29 @@ const fs = require("fs");
         
           await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
         }
-         
+        else{
+         let deduct = await eco.deduct(user, cara, texts[0]);
+         let buttons = [
+            {
+              buttonId: `${prefix}slot`,
+              buttonText: { displayText: "Slot 🎰" },
+              type: 1,
+            },
+            {
+                buttonId: `${prefix}wallet`,
+              buttonText: { displayText: "Wallet 💳" },
+              type: 1,
+
+            },
+          ];
+          let buttonMessage = {
+            text: `*📉 You lost 💴 ${texts[0]}*`,
+            footer: `*${botName}*`,
+            buttons: buttons,
+            type: 4
+          };
+        
+          await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+        }
     }
 }
