@@ -19,7 +19,7 @@ module.exports = {
       var today = new Date();
       if (today.getDay() == 6 || today.getDay() == 5 || today.getDay() == 0){
           if (text == 'help') return m.reply(`*1:* Use ${prefix}slot to play\n\n*2:* You must have 🪙100 in your wallet\n\n*3:* If you don't have money in wallet then withdraw from your bank\n\n*4:* If you don't have money in your bank too then use economy features to gain money`)
-          if (text == 'money') return m.reply(`*1:* Small Win --> +🪙9999\n\n*2:* Small Lose --> -🪙20\n\n*3:* Big Win --> +🪙99999\n\n*4:* Big Lose --> -🪙50\n\n*5:* 🎉 JackPot --> +🪙999999`)
+          if (text == 'money') return m.reply(`*1:* Small Win --> +🪙30\n\n*2:* Small Lose --> -🪙20\n\n*3:* Big Win --> +🪙60\n\n*4:* Big Lose --> -🪙50\n\n*5:* 🎉 JackPot --> +🪙9999`)
           const fruit1= ["🥥", "🍎", "🍇"]
           const fruit2 = ["🍎", "🍇", "🥥"]  
           const fruit3 = ["🍇", "🥥", "🍎"]         
@@ -50,24 +50,24 @@ module.exports = {
                     m.reply(`${mess1}\n\n*Big Lose -->* _🪙50_`)
           }
           else if ((f1 == f2) && f2 == f3){
-             const give1 = await eco.give(user, cara, 999999); 
-                   m.reply(`${mess2}\n*_Big Win -->* _🪙999999_`)
+             const give1 = await eco.give(user, cara, 60); 
+                   m.reply(`${mess2}\n*_Big Win -->* _🪙60_`)
           }
           else if ((f1 == f2) && f2 !== f3){
-             const give2 = await eco.give(user, cara, 99999);
-                   m.reply(`${mess3}\n*Small Win -->* _🪙99999_`)
+             const give2 = await eco.give(user, cara, 30);
+                   m.reply(`${mess3}\n*Small Win -->* _🪙30_`)
           }
           else if ((f1 !== f2) && f1 == f3){
              const deduct2 = await eco.deduct(user, cara, 20);
                    m.reply(`${mess5}\n\n*Small Lose -->* _🪙20_`)
           }
           else if ((f1 !== f2) && f2 == f3){
-             const give4 = eco.give(user, cara, 99999); 
-                   m.reply(`${mess3}\n\n*Small Win -->* _🪙99999_`)
+             const give4 = eco.give(user, cara, 30); 
+                   m.reply(`${mess3}\n\n*Small Win -->* _🪙30_`)
           }
           else if (((f1 == f2) && f2 == f3) && f3 == f4){
-             const give5 = eco.give(user, cara, 1000);
-                  m.reply(`${mess4}\n\n_🎊 JackPot --> _🪙1000_`)
+             const give5 = eco.give(user, cara, 9999);
+                  m.reply(`${mess4}\n\n_🎊 JackPot --> _🪙9999_`)
           }
           else { 
                   m.reply(`Do you understand what you are doing?`)
