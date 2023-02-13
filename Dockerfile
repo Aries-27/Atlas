@@ -1,3 +1,5 @@
+FROM node:lts-buster
+
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
@@ -14,5 +16,8 @@ RUN yarn install
 COPY . .
 
 CMD ["pm2-runtime", "."]
+
+
+
 
 
